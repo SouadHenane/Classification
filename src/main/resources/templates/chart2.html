@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/canvasjs.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            $(document).ready(function() {
+                var dataPointsA = []
+                var dataPointsB = []
+
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://api.myjson.com/bins/1igag',
+                    dataType: 'json',
+                    success: function(field) {
+                        for (var i = 0; i < field.length; i++) {
+                            dataPointsA.push({
+                                x: field[i].time,
+                                y: field[i].xxx
+                            });
+                            dataPointsB.push({
+                                x: field[i].time,
+                                y: field[i].yyy
+                            });
+                        }
+
+
+                        var chart = new CanvasJS.Chart("chartContainer", {
+                            title: {
+                                text: "JSON from External File"
+                            },
+
+                            data: [{
+                                type: "line",
+                                name: "line1",
+                                dataPoints: dataPointsA
+                            }, {
+                                type: "line",
+                                name: "line2",
+                                dataPoints: dataPointsB
+                            }, ]
+                        });
+
+                        chart.render();
+
+                    }
+                });
+            })
+        }
+    </script>
+
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="../js/canvasjs.min.js"></script>
+<script src="../js/jquery/jquery-2.2.4.min.js"></script>
+</body>
+</html>

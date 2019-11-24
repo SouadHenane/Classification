@@ -1,0 +1,57 @@
+{
+  "JSChart" : {
+    "datasets" : [
+      {
+        "type" : "pie",
+        "data" : [
+          {
+            "unit" : "Sector 1",
+            "value" : "2"
+          },
+          {
+            "unit" : "Sector 2",
+            "value" : "1"
+          },
+          {
+            "unit" : "Sector 3",
+            "value" : "3"
+          },
+          {
+            "unit" : "Sector 4",
+            "value" : "6"
+          },
+          {
+            "unit" : "Sector 5",
+            "value" : "8.5"
+          },
+          {
+            "unit" : "Sector 6",
+            "value" : "10"
+          }
+        ]
+      }
+    ],
+    "colorset" : [
+      "#FACC00",
+      "#FB9900",
+      "#FB6600",
+      "#FB4800",
+      "#CB0A0A",
+      "#F8F933"
+    ],
+    "optionset" : [
+      {
+        "set" : "setTitleColor",
+        "value" : "'#857D7D'"
+      },
+      {
+        "set" : "setPieUnitsColor",
+        "value" : "'#9B9B9B'"
+      },
+      {
+        "set" : "setPieValuesColor",
+        "value" : "'#6A0000'"
+      }
+    ]
+  }
+}

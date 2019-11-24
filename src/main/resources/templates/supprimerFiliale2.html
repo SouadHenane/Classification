@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--<script src="alert/dist/alertify.min.js"></script>-->
+    <!--<link rel="stylesheet" href="alert/dist/alertify.core.css" />-->
+    <!--<link rel="stylesheet" href="alert/dist/alertify.default.css" id="toggleCSS" />-->
+
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/default.min.css"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/semantic.min.css"/>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/bootstrap.min.css"/>
+
+    <!--
+        RTL version
+    -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/alertify.rtl.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/default.rtl.min.css"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/semantic.rtl.min.css"/>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/bootstrap.rtl.min.css"/>
+
+
+    <style>
+        .divclass {
+            background: #415665;
+            height: 50px;
+            width:200px;
+            border-radius: 15px;
+            padding:20px;
+            font-size:22px;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+<div class="divclass">
+    <button onclick="JSalert()">Show confirm alert</button>
+</div>
+<script>
+    function JSalert(){
+// A confirm dialog
+        alertify.confirm("Are you sure, you want to delete this file?", function (e) {
+            if (e) {
+                alertify.alert("File is Removed!");
+            } else {
+                alertify.alert("File is safe!");
+            }
+        });
+    }
+</script>
+</body>
+</html>
+

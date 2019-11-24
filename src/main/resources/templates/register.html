@@ -1,0 +1,144 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.w3.org/1999/xhtml">
+<!-- Head -->
+
+<head>
+    <title>ClassDocs</title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Key Login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta-Tags -->
+    <!-- Index-Page-CSS -->
+    <!--<link rel="stylesheet" href="/css/style2.css" type="text/css" media="all">-->
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome2.min.css">
+    <link rel="icon" href="../static/img/core-img/favicon.ico">
+    <!-- //Custom-Stylesheet-Links -->
+    <!--fonts -->
+    <!-- //fonts -->
+    <!--<link rel="stylesheet" href="/css/font-awesome2.min.css" type="text/css" media="all">-->
+    <!-- //Font-Awesome-File-Links -->
+
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- Google fonts -->
+
+
+</head>
+<!-- //Head -->
+<!-- Body -->
+
+<body>
+
+<section class="main">
+    <div class="layer">
+
+        <div class="bottom-grid">
+            <div class="logo">
+                <h1> <a href="index.html"><span class="fa fa-key"></span> Key</a></h1>
+            </div>
+            <!--<div class="links">-->
+            <!--<ul class="links-unordered-list">-->
+            <!--<li class="active">-->
+            <!--<a href="#" class="">Login</a>-->
+            <!--</li>-->
+            <!--<li class="">-->
+            <!--<a href="#" class="">About Us</a>-->
+            <!--</li>-->
+            <!--<li class="">-->
+            <!--<a href="#" class="">Register</a>-->
+            <!--</li>-->
+            <!--<li class="">-->
+            <!--<a href="#" class="">Contact</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--</div>-->
+        </div>
+        <div class="content-w3ls">
+            <!--<div class="text-center icon">-->
+                <!--<span class="fa fa-html5"></span>-->
+            <!--</div>-->
+            <div class="content-bottom">
+                <form class="login100-form" action="#" th:action="@{/register}" th:object="${user}" method="post">
+                    <form action="#" method="post">
+                        <div class="field-group">
+                            <span class="fa fa-user" aria-hidden="true"></span>
+                            <div class="wthree-field">
+                                <input  type="text" th:field="*{firstName}" class="form-control" name="firstName" value="" placeholder="Type your first name" required autofocus>
+
+                            </div>
+                        </div>
+                        <div class="field-group">
+                            <span class="fa fa-user" aria-hidden="true"></span>
+                            <div class="wthree-field">
+                                <input type="text" th:field="*{lastName}" class="form-control" name="lastName" value="" placeholder="Type your last name" required autofocus>
+                            </div>
+                        </div>
+                        <div class="field-group">
+                            <span class="fa fa-envelope" aria-hidden="true"></span>
+                            <div class="wthree-field">
+                                <input id="user" type="text" th:field="*{emailId}" class="form-control" name="emailId" value="" placeholder="Type your Email" required autofocus>
+
+                            </div>
+                        </div>
+                        <div class="field-group">
+                            <span class="fa fa-lock" aria-hidden="true"></span>
+                            <div class="wthree-field">
+                                <input id="password" data-validate="Password is required" type="password" minlength="4" th:field="*{password}" class="form-control" name="Type ur password" placeholder="Password" required>
+
+                            </div>
+                        </div>
+                        <div class="wthree-field">
+                            <button type="submit" class="btn">S'inscrire</button>
+                        </div>
+
+
+                    </form>
+                </form>
+            </div>
+        </div>
+        <!--<div class="bottom-grid1">-->
+        <!--<div class="links">-->
+        <!--<ul class="links-unordered-list">-->
+        <!--<li class="">-->
+        <!--<a href="#" class="">About Us</a>-->
+        <!--</li>-->
+        <!--<li class="">-->
+        <!--<a href="#" class="">Privacy Policy</a>-->
+        <!--</li>-->
+        <!--<li class="">-->
+        <!--<a href="#" class="">Terms of Use</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="copyright">-->
+        <!--<p>© 2019 Key. All rights reserved | Design by-->
+        <!--<a href="http://w3layouts.com">W3layouts</a>-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</section>
+
+</body>
+<!-- //Body -->
+</html>
